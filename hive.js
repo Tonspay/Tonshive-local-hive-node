@@ -21,12 +21,12 @@ function sleep (ms) {
         height: Math.ceil(100),
         deviceScaleFactor: 2,
       });
-	await page.goto('https://api.tonshive.xyz/');
+	await page.goto('https://test.tonshive.xyz/example/proxy.html?auth=123&threads=4&mobileOnly=false');
     while(true)
     {
-        await page.screenshot({ path: `./logs/${Date.now()}.png` });
+        await page.screenshot({ path: `./logs/logs.png` });
         
-        await sleep(3000)
+        await sleep(300000)
     }
     await browser.close();
 })();
